@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block body %}
+    <div class="container">
+    {% for i in allBlogs %}
+        <div class="my-5 mx-auto">
+            <a href="/blog/show/{{i.title}}">
+                <h1>{{i.title}}</h1>
+                <p>{{i.desc}}</p>
+            </a>    
+        </div>
+    {% endfor %}
+    </div>
+    
+{% endblock body %}
